@@ -1,0 +1,79 @@
+/* Header and Navigation Menu */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Content Sections */
+section {
+    padding: 20px;
+    margin-top: 60px; /* To avoid overlap with fixed header */
+}
+
+/* First Section - Static Position */
+#section1 {
+    position: static;
+}
+
+/* Second Section - Relative Position */
+#section2 {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+/* Third Section - Absolute Position */
+#section3 {
+    position: relative; /* Parent element should be relative */
+}
+
+#section3 .absolute-content {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/* Fourth Section - Sticky Element */
+#section4 {
+    height: 200vh; /* To demonstrate sticky behavior */
+}
+
+#section4 .sticky-element {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 10px;
+    background-color: yellow;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Footer - Fixed Position */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

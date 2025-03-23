@@ -13,6 +13,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column;
         }
 
         .product-card {
@@ -22,6 +23,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             max-width: 600px;
+            margin-bottom: 20px;
         }
 
         .product-card img {
@@ -86,6 +88,55 @@
         .product-details .button:hover {
             background-color: #155a24;
         }
+
+        .card-info {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .card-info h2 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .card-info label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .card-info input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .card-info button {
+            background-color: #1a732e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .card-info button:hover {
+            background-color: #155a24;
+        }
     </style>
 </head>
 <body>
@@ -98,6 +149,22 @@
             <div class="price">$149.99 <del>$169.99</del></div>
             <button class="button">Add to Cart</button>
         </div>
+    </div>
+
+    <div class="card-info">
+        <h2>Enter Your Card Information</h2>
+        <form>
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+
+            <label for="expiry-date">Expiry Date</label>
+            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+            <button type="submit">Submit</button>
+        </form>
     </div>
 </body>
 </html>

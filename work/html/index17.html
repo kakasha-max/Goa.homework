@@ -1,0 +1,438 @@
+overflow: hidden;
+    text-overflow: ellipsis;
+}
+<style>
+:-webkit-any(input,cr-searchbox-icon,.searchbox-icon-button) {
+    z-index: 100;
+}
+</style>
+<style>
+input {
+    background-color: var(--color-searchbox-background);
+    border: none;
+    border-radius: var(--cr-searchbox-border-radius);
+    color: var(--color-searchbox-foreground);
+    font-family: inherit;
+    font-size: inherit;
+    height: 100%;
+    outline: 0;
+    padding-inline-end: calc(var(--cr-searchbox-voice-icon-offset) + var(--cr-searchbox-voice-search-button-width) + var(--cr-searchbox-inner-icon-margin));
+    padding-inline-start: calc(52px + var(--cr-searchbox-thumbnail-icon-offset, 0px));
+    position: relative;
+    width: 100%;
+}
+user agent stylesheet
+input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
+    overflow-clip-margin: 0px !important;
+    overflow: clip !important;
+}
+user agent stylesheet
+input[type="search" i] {
+    appearance: auto;
+    box-sizing: border-box;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+user agent stylesheet
+input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
+}
+user agent stylesheet
+input {
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-variant-emoji: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-size-adjust: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+constructed stylesheet
+cr-searchbox[shown] {
+    visibility: visible;
+}
+constructed stylesheet
+cr-searchbox {
+}
+</style>
+<style>
+:host([searchbox-lens-search-enabled_]) {
+    --cr-searchbox-voice-icon-offset: 53px;
+}
+</style>
+<style>
+:host([searchbox-voice-search-enabled_]) {
+:host([searchbox-voice-search-enabled_]) {
+    --cr-searchbox-voice-search-button-width: var(--cr-searchbox-icon-width);
+}
+<style>
+:host {
+    --cr-searchbox-width: var(--cr-searchbox-min-width);
+    --cr-searchbox-border-radius: calc(0.5* var(--cr-searchbox-height));
+    --cr-searchbox-icon-width: 26px;
+    --cr-searchbox-inner-icon-margin: 8px;
+    --cr-searchbox-voice-icon-offset: 16px;
+    --cr-searchbox-voice-search-button-width: 0px;
+    --cr-searchbox-match-padding-inline-start: 12px;
+    border-radius: var(--cr-searchbox-border-radius);
+    box-shadow: var(--cr-searchbox-shadow);
+    font-size: var(--cr-searchbox-font-size, 16px);
+    height: var(--cr-searchbox-height);
+    width: var(--cr-searchbox-width);
+}
+style attribute {
+    --ntp-logo-color: inherit;
+    --color-new-tab-page-attribution-foreground: rgba(0, 0, 0, 1.00);
+    --color-new-tab-page-most-visited-foreground: rgba(0, 0, 0, 1.00);
+}
+constructed stylesheet
+:host([realbox-can-show-secondary-side]), :host([realbox-can-show-secondary-side][realbox-had-secondary-side]) {
+    --ntp-search-box-width: 746px;
+}
+constructed stylesheet
+@media (min-width: 804px) {
+    :host {
+        --ntp-module-layout-width: 768px;
+        --ntp-module-width: 768px;
+    }
+}
+constructed stylesheet
+@media (min-width: 672px) {
+    :host {
+        --ntp-search-box-width: 561px;
+    }
+}
+constructed stylesheet
+@media (min-width: 560px) {
+    :host {
+        --ntp-search-box-width: 449px;
+    }
+}
+constructed stylesheet
+:host {
+    --cr-focus-outline-color: var(--color-new-tab-page-focus-ring);
+    --cr-searchbox-height: 48px;
+    --cr-searchbox-shadow: 0 1px 6px 0 var(--color-searchbox-shadow);
+    --cr-searchbox-icon-left-position: 12px;
+    --cr-searchbox-icon-size-in-searchbox: 20px;
+    --cr-searchbox-icon-top-position: 0;
+    --cr-searchbox-min-width: var(--ntp-search-box-width);
+    --ntp-theme-text-shadow: none;
+    --ntp-one-google-bar-height: 56px;
+    --ntp-search-box-width: 337px;
+    --ntp-menu-shadow: var(--color-new-tab-page-menu-inner-shadow) 0 1px 2px 0, var(--color-new-tab-page-menu-outer-shadow) 0 2px 6px 2px;
+    --ntp-module-width: 360px;
+    --ntp-module-layout-width: 360px;
+    --ntp-module-border-radius: 16px;
+    --ntp-module-item-border-radius: 12px;
+    --ntp-protected-icon-background-color: transparent;
+    --ntp-protected-icon-background-color-hovered: rgba(255, 255, 255, .1);
+}
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 81.25%;
+}
+html:not(#z) {
+    --user-color-source: baseline-grayscale;
+    --color-ref-primary0: #000000ff;
+    --color-ref-primary10: #041e49ff;
+    --color-ref-primary20: #062e6fff;
+    --color-ref-primary25: #073888ff;
+    --color-ref-primary30: #0842a0ff;
+    --color-ref-primary40: #0b57d0ff;
+    --color-ref-primary50: #1b6ef3ff;
+    --color-ref-primary60: #4c8df6ff;
+    --color-ref-primary70: #7cacf8ff;
+    --color-ref-primary80: #a8c7faff;
+    --color-ref-primary90: #d3e3fdff;
+    --color-ref-primary95: #ecf3feff;
+    --color-ref-primary99: #fafbffff;
+    --color-ref-primary100: #ffffffff;
+    --color-ref-secondary0: #000000ff;
+    --color-ref-secondary10: #001d35ff;
+    --color-ref-secondary12: #002238ff;
+    --color-ref-secondary15: #002845ff;
+    --color-ref-secondary20: #003355ff;
+    --color-ref-secondary25: #003f66ff;
+    --color-ref-secondary30: #004a77ff;
+    --color-ref-secondary35: #005789ff;
+    --color-ref-secondary40: #00639bff;
+    --color-ref-secondary50: #047db7ff;
+    --color-ref-secondary60: #3998d3ff;
+    --color-ref-secondary70: #5ab3f0ff;
+    --color-ref-secondary80: #7fcfffff;
+    --color-ref-secondary90: #c2e7ffff;
+    --color-ref-secondary95: #dff3ffff;
+    --color-ref-secondary99: #f7fcffff;
+    --color-ref-secondary100: #ffffffff;
+    --color-ref-tertiary0: #000000ff;
+    --color-ref-tertiary10: #072711ff;
+    --color-ref-tertiary20: #0a3818ff;
+    --color-ref-tertiary30: #0f5223ff;
+    --color-ref-tertiary40: #146c2eff;
+    --color-ref-tertiary50: #198639ff;
+    --color-ref-tertiary60: #1ea446ff;
+    --color-ref-tertiary70: #37be5fff;
+    --color-ref-tertiary80: #6dd58cff;
+    --color-ref-tertiary90: #c4eed0ff;
+    --color-ref-tertiary95: #e7f8edff;
+    --color-ref-tertiary99: #f2ffeeff;
+    --color-ref-tertiary100: #ffffffff;
+    --color-ref-error0: #000000ff;
+    --color-ref-error10: #410e0bff;
+    --color-ref-error20: #601410ff;
+    --color-ref-error30: #8c1d18ff;
+    --color-ref-error40: #b3261eff;
+Show all properties (1293 more)
+}
+constructed stylesheet
+html {
+    --cr-fallback-color-outline: rgb(116, 119, 117);
+    --cr-fallback-color-primary: rgb(11, 87, 208);
+    --cr-fallback-color-on-primary: rgb(255, 255, 255);
+    --cr-fallback-color-primary-container: rgb(211, 227, 253);
+    --cr-fallback-color-on-primary-container: rgb(4, 30, 73);
+    --cr-fallback-color-secondary-container: rgb(194, 231, 255);
+    --cr-fallback-color-on-secondary-container: rgb(0, 29, 53);
+    --cr-fallback-color-neutral-container: rgb(242, 242, 242);
+    --cr-fallback-color-neutral-outline: rgb(199, 199, 199);
+    --cr-fallback-color-surface: rgb(255, 255, 255);
+    --cr-fallback-color-surface1: rgb(248, 250, 253);
+    --cr-fallback-color-surface2: rgb(243, 246, 252);
+    --cr-fallback-color-on-surface-rgb: 31, 31, 31;
+    --cr-fallback-color-on-surface: rgb(var(--cr-fallback-color-on-surface-rgb));
+    --cr-fallback-color-surface-variant: rgb(225, 227, 225);
+    --cr-fallback-color-on-surface-variant: rgb(68, 71, 70);
+    --cr-fallback-color-on-surface-subtle: rgb(71, 71, 71);
+    --cr-fallback-color-inverse-primary: rgb(168, 199, 250);
+    --cr-fallback-color-inverse-surface: rgb(48, 48, 48);
+    --cr-fallback-color-inverse-on-surface: rgb(242, 242, 242);
+    --cr-fallback-color-tonal-container: rgb(211, 227, 253);
+    --cr-fallback-color-on-tonal-container: rgb(4, 30, 73);
+    --cr-fallback-color-tonal-outline: rgb(168, 199, 250);
+    --cr-fallback-color-error: rgb(179, 38, 30);
+    --cr-fallback-color-divider: rgb(211, 227, 253);
+    --cr-fallback-color-state-hover-on-prominent_: rgba(253, 252, 251, .1);
+    --cr-fallback-color-state-on-subtle-rgb_: 31, 31, 31;
+    --cr-fallback-color-state-hover-on-subtle_: rgba( 31,31,31, .06);
+    --cr-fallback-color-state-ripple-neutral-on-subtle_: rgba( 31,31,31, .08);
+    --cr-fallback-color-state-ripple-primary-rgb_: 124, 172, 248;
+    --cr-fallback-color-state-ripple-primary_: rgba( 124,172,248, 0.32);
+    --cr-fallback-color-base-container: rgb(236, 239, 247);
+    --cr-fallback-color-disabled-background: rgba( 31,31,31, .12);
+    --cr-fallback-color-disabled-foreground: rgba( 31,31,31, .38);
+    --cr-hover-background-color: var(--color-sys-state-hover, rgba(var(--cr-fallback-color-on-surface-rgb), .08));
+    --cr-hover-on-prominent-background-color: var(--color-sys-state-hover-on-prominent, var(--cr-fallback-color-state-hover-on-prominent_));
+    --cr-hover-on-subtle-background-color: var(--color-sys-state-hover-on-subtle, var(--cr-fallback-color-state-hover-on-subtle_));
+    --cr-active-background-color: var(--color-sys-state-pressed, rgba(var(--cr-fallback-color-on-surface-rgb), .12));
+    --cr-active-on-primary-background-color: var(--color-sys-state-ripple-primary, var(--cr-fallback-color-state-ripple-primary_));
+    --cr-active-neutral-on-subtle-background-color: var(--color-sys-state-ripple-neutral-on-subtle, var(--cr-fallback-color-state-ripple-neutral-on-subtle_));
+    --cr-focus-outline-color: var(--color-sys-state-focus-ring, var(--cr-fallback-color-primary));
+    --cr-primary-text-color: var(--color-primary-foreground, var(--cr-fallback-color-on-surface));
+    --cr-secondary-text-color: var(--color-secondary-foreground, var(--cr-fallback-color-on-surface-variant));
+    --cr-link-color: var(--color-link-foreground-default, var(--cr-fallback-color-primary));
+    --cr-button-height: 36px;
+    --cr-shadow-color: var(--color-sys-shadow, rgb(0, 0, 0));
+    --cr-checked-color: var(--color-checkbox-foreground-checked, var(--cr-fallback-color-primary));
+}
+constructed stylesheet
+html {
+    --cr-button-edge-spacing: 12px;
+    --cr-controlled-by-spacing: 24px;
+    --cr-default-input-max-width: 264px;
+    --cr-icon-ripple-size: 36px;
+    --cr-icon-ripple-padding: 8px;
+    --cr-icon-size: 20px;
+    --cr-icon-button-margin-start: 16px;
+    --cr-icon-ripple-margin: calc(var(--cr-icon-ripple-padding)* -1);
+    --cr-section-min-height: 48px;
+    --cr-section-two-line-min-height: 64px;
+    --cr-section-padding: 20px;
+    --cr-section-vertical-padding: 12px;
+    --cr-section-indent-width: 40px;
+    --cr-section-indent-padding: calc(var(--cr-section-padding) + var(--cr-section-indent-width));
+    --cr-section-vertical-margin: 21px;
+    --cr-centered-card-max-width: 680px;
+    --cr-centered-card-width-percentage: 0.96;
+    --cr-hairline: 1px solid rgba(var(--cr-hairline-rgb), .14);
+    --cr-separator-height: 1px;
+    --cr-separator-line: var(--cr-separator-height) solid var(--cr-separator-color);
+    --cr-toolbar-overlay-animation-duration: 150ms;
+    --cr-toolbar-height: 56px;
+    --cr-container-shadow-height: 6px;
+    --cr-container-shadow-margin: calc(-1* var(--cr-container-shadow-height));
+    --cr-container-shadow-max-opacity: 1;
+    --cr-card-border-radius: 8px;
+    --cr-disabled-opacity: .38;
+    --cr-form-field-bottom-spacing: 16px;
+    --cr-form-field-label-font-size: .625rem;
+    --cr-form-field-label-height: 1em;
+    --cr-form-field-label-line-height: 1;
+}
+constructed stylesheet
+html {
+    --google-blue-50-rgb: 232, 240, 254;
+    --google-blue-50: rgb(var(--google-blue-50-rgb));
+    --google-blue-100-rgb: 210, 227, 252;
+    --google-blue-100: rgb(var(--google-blue-100-rgb));
+    --google-blue-200-rgb: 174, 203, 250;
+    --google-blue-200: rgb(var(--google-blue-200-rgb));
+    --google-blue-300-rgb: 138, 180, 248;
+    --google-blue-300: rgb(var(--google-blue-300-rgb));
+    --google-blue-400-rgb: 102, 157, 246;
+    --google-blue-400: rgb(var(--google-blue-400-rgb));
+    --google-blue-500-rgb: 66, 133, 244;
+    --google-blue-500: rgb(var(--google-blue-500-rgb));
+    --google-blue-600-rgb: 26, 115, 232;
+    --google-blue-600: rgb(var(--google-blue-600-rgb));
+    --google-blue-700-rgb: 25, 103, 210;
+    --google-blue-700: rgb(var(--google-blue-700-rgb));
+    --google-blue-800-rgb: 24, 90, 188;
+    --google-blue-800: rgb(var(--google-blue-800-rgb));
+    --google-blue-900-rgb: 23, 78, 166;
+    --google-blue-900: rgb(var(--google-blue-900-rgb));
+    --google-green-50-rgb: 230, 244, 234;
+    --google-green-50: rgb(var(--google-green-50-rgb));
+    --google-green-200-rgb: 168, 218, 181;
+    --google-green-200: rgb(var(--google-green-200-rgb));
+    --google-green-300-rgb: 129, 201, 149;
+    --google-green-300: rgb(var(--google-green-300-rgb));
+    --google-green-400-rgb: 91, 185, 116;
+    --google-green-400: rgb(var(--google-green-400-rgb));
+    --google-green-500-rgb: 52, 168, 83;
+    --google-green-500: rgb(var(--google-green-500-rgb));
+    --google-green-600-rgb: 30, 142, 62;
+    --google-green-600: rgb(var(--google-green-600-rgb));
+    --google-green-700-rgb: 24, 128, 56;
+    --google-green-700: rgb(var(--google-green-700-rgb));
+    --google-green-800-rgb: 19, 115, 51;
+    --google-green-800: rgb(var(--google-green-800-rgb));
+    --google-green-900-rgb: 13, 101, 45;
+    --google-green-900: rgb(var(--google-green-900-rgb));
+    --google-grey-50-rgb: 248, 249, 250;
+    --google-grey-50: rgb(var(--google-grey-50-rgb));
+    --google-grey-100-rgb: 241, 243, 244;
+    --google-grey-100: rgb(var(--google-grey-100-rgb));
+    --google-grey-200-rgb: 232, 234, 237;
+    --google-grey-200: rgb(var(--google-grey-200-rgb));
+    --google-grey-300-rgb: 218, 220, 224;
+    --google-grey-300: rgb(var(--google-grey-300-rgb));
+    --google-grey-400-rgb: 189, 193, 198;
+    --google-grey-400: rgb(var(--google-grey-400-rgb));
+    --google-grey-500-rgb: 154, 160, 166;
+    --google-grey-500: rgb(var(--google-grey-500-rgb));
+Show all properties (56 more)
+}
+html {
+    --google-grey-850-rgb: 48, 49, 52;
+    --google-grey-850: rgb(var(--google-grey-850-rgb));
+    --google-red-50-rgb: 252, 232, 230;
+    --google-red-50: rgb(var(--google-red-50-rgb));
+    --google-red-800-rgb: 179, 20, 18;
+    --google-red-800: rgb(var(--google-red-800-rgb));
+    --ntp-focus-shadow: 0 0 0 2px var(--color-new-tab-page-focus-ring);
+    --ntp-module-first-element-top-padding: 4px;
+    --ntp-module-icon-size: 48px;
+    --ntp-module-item-border-radius: 4px;
+    --ntp-module-line-height: 20px;
+    --ntp-module-text-size: 13px;
+    --ntp-module-secondary-text-size: 11px;
+    --ntp-module-secondary-line-height: 16px;
+    --ntp-module-see-more-font-weight: 500;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-size: 81.25%;
+        }
+
+        input {
+            background-color: var(--color-searchbox-background, #fff);
+            border: none;
+            border-radius: var(--cr-searchbox-border-radius, 4px);
+            color: var(--color-searchbox-foreground, #000);
+            font-family: inherit;
+            font-size: inherit;
+            height: 100%;
+            outline: 0;
+            padding-inline-end: calc(var(--cr-searchbox-voice-icon-offset, 16px) + var(--cr-searchbox-voice-search-button-width, 0px) + var(--cr-searchbox-inner-icon-margin, 8px));
+            padding-inline-start: calc(52px + var(--cr-searchbox-thumbnail-icon-offset, 0px));
+            position: relative;
+            width: 100%;
+        }
+
+        :host {
+            --cr-searchbox-width: var(--cr-searchbox-min-width, 300px);
+            --cr-searchbox-border-radius: calc(0.5 * var(--cr-searchbox-height, 48px));
+            --cr-searchbox-icon-width: 26px;
+            --cr-searchbox-inner-icon-margin: 8px;
+            --cr-searchbox-voice-icon-offset: 16px;
+            --cr-searchbox-voice-search-button-width: 0px;
+            --cr-searchbox-match-padding-inline-start: 12px;
+            border-radius: var(--cr-searchbox-border-radius);
+            box-shadow: var(--cr-searchbox-shadow, 0 1px 6px rgba(0, 0, 0, 0.2));
+            font-size: var(--cr-searchbox-font-size, 16px);
+            height: var(--cr-searchbox-height, 48px);
+            width: var(--cr-searchbox-width);
+        }
+
+        @media (min-width: 804px) {
+            :host {
+                --ntp-module-layout-width: 768px;
+                --ntp-module-width: 768px;
+            }
+        }
+
+        @media (min-width: 672px) {
+            :host {
+                --ntp-search-box-width: 561px;
+            }
+        }
+
+        @media (min-width: 560px) {
+            :host {
+                --ntp-search-box-width: 449px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Search...">
+</body>
+</html>

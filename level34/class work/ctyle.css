@@ -1,0 +1,39 @@
+/* Link pseudo-class /
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+a:link {
+    color: green;
+    text-decoration: none;
+}
+a:visited {
+    color: purple;
+    text-decoration: underline;
+}
+a:visited {
+    color: orange;
+    text-decoration: underline;
+}
+
+/ Hover pseudo-class /
+button:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/ Active pseudo-class */
+button:active {
+    background-color: darkblue;
+    color: white;
+}
+
+a:active {
+    color: green;
+    text-decoration: none;
+}

@@ -1,0 +1,8 @@
+/* style.css */
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    transform: rotate(360)
+}

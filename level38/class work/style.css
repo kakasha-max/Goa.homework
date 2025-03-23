@@ -1,0 +1,26 @@
+
+
+/* Box-sizing property */
+.element {
+    -webkit-box-sizing: border-box; /* Safari/Chrome */
+    -moz-box-sizing: border-box;    /* Firefox */
+    box-sizing: border-box;         /* Standard */
+}
+
+/* Flexbox property */
+.container {
+    display: -webkit-box;      /* Safari/Chrome */
+    display: -moz-box;         /* Firefox */
+    display: -ms-flexbox;      /* IE 10 */
+    display: -webkit-flex;     /* Safari 6.1+ */
+    display: flex;             /* Standard */
+}
+
+/* Transform property */
+.transform-element {
+    -webkit-transform: rotate(45deg); /* Safari/Chrome */
+    -moz-transform: rotate(45deg);    /* Firefox */
+    -ms-transform: rotate(45deg);     /* IE 9 */
+    -o-transform: rotate(45deg);      /* Opera */
+    transform: rotate(45deg);         /* Standard */
+}

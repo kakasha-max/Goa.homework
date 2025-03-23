@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huddle Community</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 900px;
+            background: linear-gradient(135deg, #5f259f, #8e44ad);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo::before {
+            content: "💬";
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .text {
+            width: 50%;
+            text-align: left;
+        }
+
+        .text h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .text p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #ddd;
+        }
+
+        .btn {
+            background: white;
+            color: #5f259f;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #ddd;
+        }
+
+        .image {
+            width: 45%;
+        }
+
+        .image img {
+            width: 100%;
+        }
+
+        .social-icons {
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">Huddle</div>
+        <div class="content">
+            <div class="image">
+                <img src="https://i.imgur.com/6esJzCn.png" alt="Community Illustration">
+            </div>
+            <div class="text">
+                <h1>Build The Community Your Fans Will Love</h1>
+                <p>Huddle re-imagines the way we build communities. You have a voice, 
+                   but so does your audience. Create connections with your users 
+                   as you engage in genuine discussion.</p>
+                <button class="btn">Register</button>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="#">🌐</a>
+            <a href="#">📘</a>
+            <a href="#">📷</a>
+        </div>
+    </div>
+
+</body>
+</html>

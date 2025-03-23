@@ -1,0 +1,23 @@
+/* Example 1: Rotate */
+.rotate-example {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    transform: rotate(45deg);
+}
+
+/* Example 2: Scale */
+.scale-example {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    transform: scale(1.5);
+}
+
+/* Example 3: Translate */
+.translate-example {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    transform: translate(50px, 50px);
+}

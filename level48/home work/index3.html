@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        height: 100vh;
+
+        display: grid;
+
+        grid-template-areas:
+            'header header aside'
+            'main footer aside'
+        ;
+
+        gap: 20px;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr ;
+    }
+
+    header{
+        background-color: hsl(3, 96%, 66%);
+        grid-area: header;
+    }
+    aside{
+        grid-area: aside;
+        background-color: hsl(24, 98%, 69%);
+    }
+    main{
+        grid-area: main;
+        background-color: hsl(168, 99%, 33%);
+    }
+
+    footer{
+        grid-area: footer;
+        background-color: hsl(168, 75%, 43%);
+    }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    display: grid;
+
+    gap: 25px;
+
+    grid-template-areas: 
+        'div1 div1 div1'
+        'div2 div3 div3'
+        'div4 div4 div4'
+    ;
+
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.div1{
+    grid-area: div1;
+    background-color: hsl(24, 98%, 69%);
+}
+
+.div2{
+    grid-area: div2;
+    background-color: hsl(168, 99%, 33%);
+}
+
+.div3{
+    grid-area: div3;
+    background-color: hsl(3, 96%, 66%);
+}
+
+.div4{
+    grid-area: div4;
+    background-color: hsl(168, 75%, 43%);
+}
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+</body>
+</html>

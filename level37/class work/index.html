@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვებგვერდის სათაური</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+        section {
+            padding: 60px 20px;
+            margin-top: 50px;
+        }
+        .relative-block {
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        .absolute-block {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .sticky-block {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: yellow;
+            padding: 10px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ვებგვერდის სათაური</h1>
+        <nav>
+            <a href="#">მთავარი</a>
+            <a href="#">ჩვენს შესახებ</a>
+            <a href="#">კონტაქტი</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>პირველი სექცია</h2>
+        <p>ეს არის სტატიკური პოზიციონირების მაგალითი.</p>
+    </section>
+
+    <section>
+        <h2>მეორე სექცია</h2>
+        <div class="relative-block">
+            <p>ეს ბლოკი არის relative პოზიციონირებით.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>მესამე სექცია</h2>
+        <div class="absolute-block">
+            <p>ეს ბლოკი არის absolute პოზიციონირებით.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>მეოთხე სექცია</h2>
+        <div class="sticky-block">
+            <p>ეს ელემენტი არის sticky პოზიციონირებით.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>ფიქსირებული ქვედა ელემენტი</p>
+    </footer>
+</body>
+</html></div></html>

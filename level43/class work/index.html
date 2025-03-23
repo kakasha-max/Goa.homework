@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 43</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --font-size-large: 24px;
+            --font-size-medium: 18px;
+            --letter-spacing-wide: 2px;
+            --padding: 10px;
+            --margin: 15px;
+            --transform-scale: scale(1.2);
+            --transition-duration: 0.3s;
+        }
+
+        .element1 {
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
+            font-size: var(--font-size-large);
+            letter-spacing: var(--letter-spacing-wide);
+            display: block;
+            padding: var(--padding);
+            margin: var(--margin);
+            transition: transform var(--transition-duration);
+        }
+
+        .element1:hover {
+            transform: var(--transform-scale);
+        }
+
+        .element2 {
+            color: var(--secondary-color);
+            background-color: var(--primary-color);
+            font-size: var(--font-size-medium);
+            display: inline-block;
+            padding: var(--padding);
+            margin: var(--margin);
+            position: relative;
+            top: 10px;
+        }
+
+        .element3 {
+            color: #fff;
+            background-color: #e74c3c;
+            font-size: var(--font-size-medium);
+            display: inline;
+            padding: var(--padding);
+            margin: var(--margin);
+            position: absolute;
+            left: 50px;
+            transform: rotate(10deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="element1">Element 1</div>
+    <div class="element2">Element 2</div>
+    <div class="element3">Element 3</div>
+</body>
+</html>

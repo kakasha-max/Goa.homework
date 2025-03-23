@@ -1,0 +1,102 @@
+/* Header and Navigation Menu */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Content Sections */
+section {
+    padding: 20px;
+    margin-top: 60px; /* To avoid overlap with fixed nav */
+}
+
+/* First Section: Static Positioning */
+#section1 {
+    position: static;
+}
+
+/* Second Section: Relative Positioning */
+#section2 .relative-block {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+/* Third Section: Absolute Positioning */
+#section3 {
+    position: relative; /* Parent container */
+}
+
+#section3 .absolute-block {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+/* Fourth Section: Sticky Element */
+#section4 .sticky-element {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+/* Fixed Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Additional Styling for Sections */
+#section1 {
+    background-color: lightgray;
+}
+
+#section2 {
+    background-color: lightyellow;
+}
+
+#section3 {
+    background-color: lightpink;
+}
+
+#section4 {
+    background-color: lightblue;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Path Animation</title>
+    <style>
+        body {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 1s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <script>
+        let box = document.querySelector('.box');
+        let step = 100;
+        let positions = [
+            { left: '50%', top: '0' },   // მარჯვნივ
+            { left: '50%', top: '50%' }, // ქვევით
+            { left: '0', top: '50%' },   // მარცხნივ
+            { left: '0', top: '0' }      // მაღლა
+        ];
+
+        let index = 0;
+
+        function moveBox() {
+            box.style.left = positions[index].left;
+            box.style.top = positions[index].top;
+            index = (index + 1) % positions.length; 
+        }
+
+        box.addEventListener('mouseover', moveBox);
+    </script>
+</body>
+</html>

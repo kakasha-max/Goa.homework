@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            width: 450px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-header h2 {
+            color: #0f9d58;
+        }
+
+        .card-header p {
+            color: #888;
+            margin-top: 5px;
+        }
+
+        .highlight {
+            color: #a7cf3b;
+            font-weight: bold;
+        }
+
+        .card-body {
+            display: flex;
+            background: #26a69a;
+            color: white;
+        }
+
+        .left {
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .left h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .left p {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .sign-up {
+            margin-top: 15px;
+            background: #cddc39;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .right {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .right h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .right ul {
+            list-style: none;
+            font-size: 12px;
+        }
+
+        .right ul li {
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>Join our community</h2>
+            <p><span class="highlight">30-day, hassle-free money back guarantee</span></p>
+            <p>Gain access to our full library of tutorials along with expert code reviews.</p>
+        </div>
+
+        <div class="card-body">
+            <div class="left">
+                <h3>Monthly Subscription</h3>
+                <p class="price">$29 <span style="font-size: 14px;">per month</span></p>
+                <p>Full access for less than $1 a day</p>
+                <button class="sign-up">Sign Up</button>
+            </div>
+
+            <div class="right">
+                <h3>Why Us</h3>
+                <ul>
+                    <li>✅ Tutorials by industry experts</li>
+                    <li>✅ Peer & expert code review</li>
+                    <li>✅ Coding exercises</li>
+                    <li>✅ Access to our GitHub repos</li>
+                    <li>✅ Community forum</li>
+                    <li>✅ Flashcard decks</li>
+                    <li>✅ New videos every week</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

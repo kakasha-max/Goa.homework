@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Categories</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            flex: 1;
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .sedan {
+            background: #e67e22;
+        }
+
+        .suv {
+            background: #006d77;
+        }
+
+        .luxury {
+            background: #003c43;
+        }
+
+        .icon {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: white;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card sedan">
+            <div class="icon">🚗</div>
+            <h2>SEDANS</h2>
+            <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for city cruising or road trips.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="card suv">
+            <div class="icon">🚙</div>
+            <h2>SUVS</h2>
+            <p>Take an SUV for its spacious interior, power, and versatility. Perfect for family trips and off-road adventures.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="card luxury">
+            <div class="icon">🏎️</div>
+            <h2>LUXURY</h2>
+            <p>Drive the best car brands without the bloated prices. Enjoy luxury and comfort with style.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+
+</body>
+</html>

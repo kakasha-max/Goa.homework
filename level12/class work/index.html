@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Columu 1</th>
+        <th>Columu 2</th>
+        <th>Columu 3</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Row 1 Cell 1</td>
+        <td>Row 1 Cell 2</td>
+        <td>Row 1 Cell 3</td>
+    </tr>
+    <tr>
+        <!-- Row 2, Cell 1 უკვე გაერთიანებულია ზემოთ -->
+        <td>Row 2 Cell 2</td>
+        <td>Row 2 Cell 3</td>
+    </tr>
+    <tr>
+        <td colspan="3">Row 3 Cell 1</td>
+    </tr>
+</table>
+
+</body>
+</html>

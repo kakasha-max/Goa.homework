@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selection Example</title>
+</head>
+<body>
+
+<h2>Select your favorite color:</h2>
+
+<select id="colorSelect">
+    <option value="blue">Blue</option>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+</select>
+
+<button onclick="checkColor()">Show Result</button>
+
+<p id="result"></p>
+
+<script>
+    function checkColor() {
+        let color = document.getElementById("colorSelect").value;
+        let resultText = "";
+
+        if (color === "blue") {
+            resultText = "Blue is the color of peace.";
+        } else if (color === "red") {
+            resultText = "Red is the color of energy and love.";
+        } else {
+            resultText = "Green is the color of nature and calm.";
+        }
+
+        document.getElementById("result").innerText = resultText;
+    }
+</script>
+
+</body>
+</html>

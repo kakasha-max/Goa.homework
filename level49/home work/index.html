@@ -1,0 +1,158 @@
+<!-- Level 49 - Social Links Profile + Product Preview Card (Responsive) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Level 49 Projects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    /* Social Links Profile */
+    .profile-card {
+      background-color: #1f1f1f;
+      color: white;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: 0 auto 40px;
+      padding: 30px;
+      text-align: center;
+    }
+    .profile-card img {
+      width: 100px;
+      border-radius: 50%;
+    }
+    .profile-card h2 {
+      margin: 15px 0 5px;
+    }
+    .profile-card p.location {
+      color: #a3f3a3;
+      margin-bottom: 20px;
+    }
+    .profile-card p.bio {
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+    .profile-card a {
+      display: block;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .profile-card a:hover {
+      background-color: #555;
+    }
+
+    /* Product Preview Card */
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      overflow: hidden;
+      max-width: 700px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 50%;
+      object-fit: cover;
+    }
+    .product-content {
+      padding: 20px;
+    }
+    .product-content h3 {
+      color: gray;
+      letter-spacing: 2px;
+    }
+    .product-content h1 {
+      margin: 10px 0;
+    }
+    .product-content p {
+      font-size: 0.9rem;
+      color: #444;
+      margin: 15px 0;
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .price .new {
+      font-size: 1.5rem;
+      color: #4caf50;
+    }
+    .price .old {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .buy-btn {
+      background-color: #4caf50;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+      width: 100%;
+    }
+    .buy-btn:hover {
+      background-color: #3b9441;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .product-card {
+        flex-direction: column;
+      }
+      .product-card img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Social Links Profile -->
+  <div class="profile-card">
+    <img src="https://i.pravatar.cc/100" alt="Profile Picture" />
+    <h2>Jessica Randall</h2>
+    <p class="location">London, United Kingdom</p>
+    <p class="bio">"Front-end developer and avid reader."</p>
+    <a href="#">GitHub</a>
+    <a href="#">Frontend Mentor</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Twitter</a>
+    <a href="#">Instagram</a>
+  </div>
+
+  <!-- Product Preview Card -->
+  <div class="product-card">
+    <img src="https://images.unsplash.com/photo-1606813902914-232d7d9097ed?auto=format&fit=crop&w=500&q=80" alt="Product Image" />
+    <div class="product-content">
+      <h3>PERFUME</h3>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+      <div class="price">
+        <span class="new">$149.99</span>
+        <span class="old">$169.99</span>
+      </div>
+      <button class="buy-btn">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+</body>
+</html>

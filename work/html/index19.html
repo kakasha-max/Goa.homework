@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>გაბი თაბუკაშვილის პორტფოლიო</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #4a90e2, #0077cc);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: #0077cc;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e0e0e0;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    #about .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    #about img {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    #projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin: 10px 5px 0;
+      text-decoration: none;
+      color: #0077cc;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    footer a {
+      color: #4a90e2;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>გაბი თაბუკაშვილი</h1>
+    <p>პროგრამისტი და ვებდეველოპერი</p>
+    <a href="#contact" class="btn">დამიკავშირდი</a>
+  </header>
+
+  <section id="about">
+    <h2>ჩემს შესახებ</h2>
+    <div class="about-content">
+      <img src="myphoto.jpg" alt="ჩემი ფოტო">
+      <div>
+        <p>მე ვარ გაბი თაბუკაშვილი, 13 წლის პროგრამისტი და გოას აკადემიის სტუდენტი.</p>
+        <h3>ჩემი უნარები</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>პროექტები</h2>
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <p>პროექტის მოკლე აღწერა</p>
+      <a href="#">ნახვა</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <p>პროექტის მოკლე აღწერა</p>
+      <a href="#">ნახვა</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>დამიკავშირდი</h2>
+    <form>
+      <input type="text" placeholder="სახელი" required>
+      <input type="email" placeholder="ელფოსტა" required>
+      <textarea placeholder="შეტყობინება" required></textarea>
+      <button type="submit">გაგზავნა</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>მომძებნე აქ:</p>
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    <a href="https://github.com" target="_blank">GitHub</a>
+  </footer>
+</body>
+</html>
+github.com

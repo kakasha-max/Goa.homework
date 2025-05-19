@@ -242,7 +242,7 @@ html {
     --google-green-900-rgb: 13, 101, 45;
     --google-green-900: rgb(var(--google-green-900-rgb));
     --google-grey-50-rgb: 248, 249, 250;
-    --google-grey-50: rgb(var(--google-grey-50-rgb));
+    --google-grey-50: rgb(v ar(--google-grey-50-rgb));
     --google-grey-100-rgb: 241, 243, 244;
     --google-grey-100: rgb(var(--google-grey-100-rgb));
     --google-grey-200-rgb: 232, 234, 237;
